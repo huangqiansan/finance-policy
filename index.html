@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Forward - 主页介绍</title>
+    <meta
+      name="description"
+      content="Cash Forward 是一款轻量、清晰、好用的记账应用，帮助你管理收支、账户、提醒与趋势分析。"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f1220;
+        --card: #1b2140;
+        --text: #f6f7fb;
+        --muted: #c8cbe0;
+        --primary: #7f8cff;
+        --accent: #5fe1c5;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f4f6ff;
+          --card: #ffffff;
+          --text: #12142a;
+          --muted: #4f5579;
+          --primary: #5564ff;
+          --accent: #16b79a;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+        background: radial-gradient(circle at top right, rgba(127, 140, 255, 0.18), transparent 40%),
+          radial-gradient(circle at bottom left, rgba(95, 225, 197, 0.15), transparent 45%),
+          var(--bg);
+        color: var(--text);
+      }
+
+      .container {
+        width: min(1000px, 92vw);
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 56px 0 28px;
+      }
+
+      .brand {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 14px 0 12px;
+        font-size: clamp(30px, 5vw, 48px);
+        line-height: 1.2;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 760px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin: 30px 0 18px;
+      }
+
+      .card {
+        background: color-mix(in srgb, var(--card) 92%, transparent);
+        border: 1px solid color-mix(in srgb, var(--primary) 28%, transparent);
+        border-radius: 16px;
+        padding: 18px;
+      }
+
+      .card h3 {
+        margin: 4px 0 8px;
+        font-size: 18px;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 18px 0 8px;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 999px;
+        padding: 11px 18px;
+        font-weight: 600;
+        border: 1px solid transparent;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .btn-ghost {
+        border-color: color-mix(in srgb, var(--primary) 35%, transparent);
+        color: var(--text);
+      }
+
+      .section {
+        margin: 36px 0;
+      }
+
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: 24px;
+      }
+
+      .section p,
+      .section li {
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      footer {
+        margin: 36px 0 22px;
+        padding-top: 16px;
+        border-top: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="brand">CASH FORWARD</div>
+      <h1>清晰管理收支，让每一笔钱都更有方向</h1>
+      <p class="lead">
+        Cash Forward 是一款专注效率与体验的记账应用，支持快速记账、趋势分析、应用锁、提醒与多端适配。
+        用更少的操作，获得更清晰的财务视图。
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="../index.html">打开 Web 版</a>
+        <a class="btn btn-ghost" href="../legal/privacy-policy.html">隐私政策</a>
+        <a class="btn btn-ghost" href="../legal/user-agreement.html">用户协议</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="grid">
+        <article class="card">
+          <h3>快速记账</h3>
+          <p>支持分类、账户、收入/支出记录，减少重复输入，日常记录更轻松。</p>
+        </article>
+        <article class="card">
+          <h3>趋势分析</h3>
+          <p>按月查看收支趋势与结构变化，帮助你持续优化消费与预算习惯。</p>
+        </article>
+        <article class="card">
+          <h3>应用锁保护</h3>
+          <p>支持 PIN 与生物识别解锁方式，保障个人财务数据的隐私安全。</p>
+        </article>
+        <article class="card">
+          <h3>多提醒管理</h3>
+          <p>可以创建多条提醒并自定义提醒内容与触发频率，不再错过记账时机。</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>适用场景</h2>
+        <ul>
+          <li>个人日常开销记录与回顾</li>
+          <li>家庭共同财务统计</li>
+          <li>阶段性预算与目标跟踪</li>
+          <li>长期消费习惯优化</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>产品理念</h2>
+        <p>
+          我们希望记账不是负担，而是一个“可持续、可复盘”的习惯。Cash Forward
+          持续围绕“更快输入、更清晰洞察、更可靠提醒”进行迭代，让你把注意力放在真正重要的财务决策上。
+        </p>
+      </section>
+    </main>
+
+    <footer class="container">
+      © 2026 Cash Forward · 主页介绍页
+    </footer>
+  </body>
+</html>
